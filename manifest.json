@@ -1,0 +1,19 @@
+{
+  "name": "ShipIt for Trello",
+  "version": "0.01",
+  "description": "Adds ShipIt to your Trello",
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["jquery-1.7.1.min.js","trelloshipit.js"],
+      "css": ["trelloshipit.css"]
+    }
+  ],
+  "manifest_version" : 2,
+    "icons": { "128": "shipit.png" },
+    "web_accessible_resources": ["images/shipit_12x12.png","images/shipit_18x18.png"],
+  "permissions": [
+    "unlimitedStorage",
+    "notifications"
+  ]
+}
